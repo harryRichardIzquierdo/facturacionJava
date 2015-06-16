@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:bago="libreria"
+>
+    <h:head>
+        <title>Inicio</title>
+    </h:head>
+    <h:body>
+            <bago:login
+                rutaImagenLogin="repository/images/bago.jpg"
+                MB_Var_usuario="#{ login.user }"
+                MB_Var_contraseña="#{ login.password }"
+                MB_Void_ingresar="#{ login.validateUser() }"
+            />
+    </h:body>
+</html>

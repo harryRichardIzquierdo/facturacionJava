@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:ph="http://xmlns.jcp.org/jsf/passthrough"
+>
+    <h:form>
+        <h:panelGroup>
+            <p:menu toggleable="true">
+                <p:submenu label="Administración" rendered="#{ mostrar }">
+                    <p:menuitem value="Lista Produtos" outcome="/views/producto/List" icon="ui-icon-bookmark" />
+                    <p:menuitem value="Lista Tipo Produtos" outcome="/views/tipoProducto/List" icon="ui-icon-bookmark" />
+                    <p:menuitem value="Lista Usuarios" outcome="/views/usuario/List" icon="ui-icon-bookmark" />
+                </p:submenu>
+                <p:submenu label="Facturación">
+                    <p:menuitem value="Crear" icon="ui-icon-plusthick" />
+                </p:submenu>
+                <p:submenu label="Reportería">
+                    <p:menuitem value="Facturación" icon="ui-icon-document" />
+                </p:submenu>                
+            </p:menu>
+        </h:panelGroup>
+    </h:form>
+</ui:composition>

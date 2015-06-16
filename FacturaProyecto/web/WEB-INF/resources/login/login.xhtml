@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:ph="http://xmlns.jcp.org/jsf/passthrough"
+>
+<!--
+Prefijos:
+ph = habilita etiquetas y atributos html5
+-->
+<h:outputStylesheet library="login" name="/css/login.css"/>
+<div class="logeo">
+        <section class="contenedorLogin">
+            <h:form class="formulario">
+                <h:graphicImage name="#{ rutaImagenLogin }" />
+                <h2>Acceso de Usuario</h2>
+                <p><h:inputText ph:placeholder="Usuario" value="#{ MB_Var_usuario }"/></p>
+                <p><h:inputSecret ph:placeholder="Contraseña" value="#{ MB_Var_contraseña }"/></p>
+                <h:messages infoStyle="color: blue;list-style:none;" errorStyle="color:red;list-style:none;" styleClass="mensajesError"/>
+                <section class="seccionBotones">
+                    <h:commandButton value="Ingresar" action="#{ MB_Void_ingresar }"/>
+                </section>
+            </h:form>
+    	</section>
+</div>
+</ui:composition>

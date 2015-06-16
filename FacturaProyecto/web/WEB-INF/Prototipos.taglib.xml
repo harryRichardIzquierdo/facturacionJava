@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facelet-taglib>
+    <namespace>libreria</namespace>
+    <tag>
+        <tag-name>login</tag-name>
+        <source>resources/login/login.xhtml</source>
+    </tag>
+    <tag>
+        <tag-name>menu</tag-name>
+        <source>resources/menu/menu.xhtml</source>
+    </tag>
+</facelet-taglib>
